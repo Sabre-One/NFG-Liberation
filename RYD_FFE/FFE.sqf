@@ -54,9 +54,50 @@ if (isNil "RydFFE_Add_Rocket") then {RydFFE_Add_Rocket = []};
 if (isNil "RydFFE_Add_Other") then {RydFFE_Add_Other = []};
 if (isNil "RydFFE_IowaMode") then {RydFFE_IowaMode = false};
 
-RydFFE_SPMortar = ["o_mbt_02_arty_f","b_mbt_01_arty_f","B_Ship_Gun_01_F"] + RydFFE_Add_SPMortar;
-RydFFE_Mortar = ["i_mortar_01_f","o_mortar_01_f","b_g_mortar_01_f","b_mortar_01_f"] + RydFFE_Add_Mortar;
-RydFFE_Rocket = ["b_mbt_01_mlrs_f","I_Truck_02_MRL_F","I_E_Truck_02_MRL_F"] + RydFFE_Add_Rocket;
+RydFFE_SPMortar = [
+"o_mbt_02_arty_f",
+"b_mbt_01_arty_f",
+"B_Ship_Gun_01_F",
+"CUP_B_M1129_MC_MK19_Woodland"] + RydFFE_Add_SPMortar;
+RydFFE_Mortar = [
+//Vanilla classes, includes up to Contact DLC
+"i_mortar_01_f",
+"o_mortar_01_f",
+"b_mortar_01_f",
+"B_T_Soldier_F",
+"b_g_mortar_01_f",
+"i_g_mortar_01_f",
+"o_g_mortar_01_f",
+"I_E_Soldier_F",
+//There is Only War, seperated by Blufor, Opfor, and Indep for customization.
+"TIOW_IG_Mortar_667_Blu",
+"TIOW_IG_Mortar_700_Blu",
+"TIOW_IG_Mortar_776_Blu",
+"TIOW_IG_Mortar_836_Blu",
+"TIOW_IG_Mortar_RenBlack_Blu",
+"TIOW_IG_Mortar_RenBrown_Blu",
+"TIOW_IG_Mortar_RenGreen_Blu",
+"TIOW_IG_Mortar_RenGrey_Blu",
+"TIOW_IG_Mortar_667_OP",
+"TIOW_IG_Mortar_700_OP",
+"TIOW_IG_Mortar_776_OP",
+"TIOW_IG_Mortar_836_OP",
+"TIOW_IG_Mortar_RenBlack_OP",
+"TIOW_IG_Mortar_RenBrown_OP",
+"TIOW_IG_Mortar_RenGreen_OP",
+"TIOW_IG_Mortar_RenGrey_OP",
+"TIOW_IG_Mortar_667_INDEP",
+"TIOW_IG_Mortar_700_INDEP",
+"TIOW_IG_Mortar_776_INDEP",
+"TIOW_IG_Mortar_836_INDEP",
+"TIOW_IG_Mortar_RenBlack_INDEP",
+"TIOW_IG_Mortar_RenBrown_INDEP",
+"TIOW_IG_Mortar_RenGreen_INDEP",
+"TIOW_IG_Mortar_RenGrey_INDEP"] + RydFFE_Add_Mortar;
+RydFFE_Rocket = [
+"b_mbt_01_mlrs_f",
+"I_Truck_02_MRL_F",
+"I_E_Truck_02_MRL_F"] + RydFFE_Add_Rocket;
 RydFFE_Other = [] + RydFFE_Add_Other;
 
 _allArty = RydFFE_SPMortar + RydFFE_Mortar + RydFFE_Rocket;
