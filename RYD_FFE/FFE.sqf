@@ -7,39 +7,45 @@ if (isNil "RydFFE_Active") then {RydFFE_Active = true};
 if (isNil "RydFFE_Manual") then {RydFFE_Manual = false};
 if (isNil "RydFFE_NoControl") then {RydFFE_NoControl = []};
 if (isNil "RydFFE_ArtyShells") then {RydFFE_ArtyShells = 1};
-if (isNil "RydFFE_Interval") then {RydFFE_Interval = 5};
+if (isNil "RydFFE_Interval") then {RydFFE_Interval = 10};
 if (isNil "RydFFE_Debug") then {RydFFE_Debug = false};
-if (isNil "RydFFE_FO") then {RydFFE_FO = [objNull]};
+if (isNil "RydFFE_FO") then {RydFFE_FO = []};
 if (isNil "RydFFE_2PhWithoutFO") then {RydFFE_2PhWithoutFO = false};
 if (isNil "RydFFE_OnePhase") then {RydFFE_OnePhase = false};
 
 if (isNil ("RydFFE_Amount")) then {RydFFE_Amount = 6};
 //if (isNil ("RydFFE_Disp")) then {RydFFE_Disp = 0.4};
 if (isNil ("RydFFE_Acc")) then {RydFFE_Acc = 2};
-if (isNil ("RydFFE_Safe")) then {RydFFE_Safe = 1};
-if (isNil ("RydFFE_Monogamy")) then {RydFFE_Monogamy = false};
+if (isNil ("RydFFE_Safe")) then {RydFFE_Safe = 100};
+if (isNil ("RydFFE_Monogamy")) then {RydFFE_Monogamy = true};
 if (isNil ("RydFFE_ShellView")) then {RydFFE_ShellView = false};
-if (isNil ("RydFFE_FOAccGain")) then {RydFFE_FOAccGain = 0.5};
+if (isNil ("RydFFE_FOAccGain")) then {RydFFE_FOAccGain = 1};
 if (isNil ("RydFFE_FOClass")) then {RydFFE_FOClass =
 	[
-	"op_ren_01_green",
-	"renegade_elite_base_12",
-	"renegade_elite_base_10",
-	"renegade_elite_base_2",
-	"op_ren_01_stubber_green",
-	"renegade_elite_base_9",
-	"op_ren_01_med_brown",
-	"op_ren_02_brown",
-	"renegade_elite_base_5",
-	"op_ren_01_at_grey",
-	"renegade_elite_base_11",
-	"renegade_elite_base_8",
-	"renegade_elite_base_6",
-	"renegade_elite_base_4",
-	"renegade_elite_base_7",
-	"op_ren_01_eng_black",
-	"op_ren_01_eng_brown"
-	
+	"i_spotter_f",
+	"o_spotter_f",
+	"b_spotter_f",
+	"o_recon_jtac_f",
+	"b_recon_jtac_f",
+	"i_sniper_f",
+	"o_sniper_f",
+	"b_sniper_f",
+	"i_soldier_m_f",
+	"o_soldier_m_f",
+	"b_g_soldier_m_f",
+	"b_soldier_m_f",
+	"o_recon_m_f",
+	"b_recon_m_f",
+	"o_soldieru_m_f",
+	"i_uav_01_f",
+	"i_uav_02_cas_f",
+	"i_uav_02_f",
+	"o_uav_01_f",
+	"o_uav_02_cas_f",
+	"o_uav_02_f",
+	"b_uav_01_f",
+	"b_uav_02_cas_f",
+	"b_uav_02_f"
 	]};
 
 if (isNil "RydFFE_Add_SPMortar") then {RydFFE_Add_SPMortar = []};
@@ -48,12 +54,18 @@ if (isNil "RydFFE_Add_Rocket") then {RydFFE_Add_Rocket = []};
 if (isNil "RydFFE_Add_Other") then {RydFFE_Add_Other = []};
 if (isNil "RydFFE_IowaMode") then {RydFFE_IowaMode = false};
 
-RydFFE_SPMortar = ["o_mbt_02_arty_f","b_mbt_01_arty_f"] + RydFFE_Add_SPMortar;
-RydFFE_Mortar = ["i_mortar_01_f","o_mortar_01_f","b_g_mortar_01_f","b_mortar_01_f","Renegade_Mortar"] + RydFFE_Add_Mortar;
-RydFFE_Rocket = ["b_mbt_01_mlrs_f"] + RydFFE_Add_Rocket;
+RydFFE_SPMortar = ["o_mbt_02_arty_f","b_mbt_01_arty_f","B_Ship_Gun_01_F"] + RydFFE_Add_SPMortar;
+RydFFE_Mortar = ["i_mortar_01_f","o_mortar_01_f","b_g_mortar_01_f","b_mortar_01_f"] + RydFFE_Add_Mortar;
+RydFFE_Rocket = ["b_mbt_01_mlrs_f","I_Truck_02_MRL_F","I_E_Truck_02_MRL_F"] + RydFFE_Add_Rocket;
 RydFFE_Other = [] + RydFFE_Add_Other;
 
 _allArty = RydFFE_SPMortar + RydFFE_Mortar + RydFFE_Rocket;
+
+	{
+	_allArty = _allArty + (_x select 0)
+	}
+foreach RydFFE_Other;
+
 
 [] call compile preprocessFile "RYD_FFE\FFE_fnc.sqf";
 Shellview = compile preprocessFile "RYD_FFE\Shellview.sqf";

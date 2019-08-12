@@ -155,6 +155,7 @@ RYD_CFF_TGT =
 		_nearCiv = false;
 
 			{
+			if (_x isKindOf "civilian") exitWith {_nearCiv = true};
 			if (((side _x) getFriend (side _CL)) >= 0.6) then 
 				{
 				_vh = vehicle _x;
@@ -269,15 +270,29 @@ RYD_ArtyMission =
 								
 							case (_tp in RydFFE_SPMortar) : 
 								{
-								switch (_ammoG) do
+								_side = configfile >> "CfgVehicles" >> _tp >> "side";
+								if ((not (isNumber _side)) or {not ((getNumber _side) == 0)}) then
 									{
-									case ("HE") : {_ammo = "32Rnd_155mm_Mo_shells_O"};
-									case ("SPECIAL") : {_ammo = "2Rnd_155mm_Mo_Cluster_O"};
-									case ("SECONDARY") : {_ammo = "2Rnd_155mm_Mo_guided_O"};
-									case ("SMOKE") : {_ammo = "6Rnd_155mm_Mo_smoke_O"};
-									case ("ILLUM") : {_ammo = ""};
-									};
-									//magazines[] = {"32Rnd_155mm_Mo_shells_O","2Rnd_155mm_Mo_guided_O","6Rnd_155mm_Mo_mine_O","2Rnd_155mm_Mo_Cluster_O","6Rnd_155mm_Mo_smoke_O","4Rnd_155mm_Mo_LG_O","6Rnd_155mm_Mo_AT_mine_O"};
+									switch (_ammoG) do
+										{
+										case ("HE") : {_ammo = "32Rnd_155mm_Mo_shells"};
+										case ("SPECIAL") : {_ammo = "2Rnd_155mm_Mo_Cluster"};
+										case ("SECONDARY") : {_ammo = "2Rnd_155mm_Mo_guided"};
+										case ("SMOKE") : {_ammo = "6Rnd_155mm_Mo_smoke"};
+										case ("ILLUM") : {_ammo = ""};
+										};
+									}
+								else
+									{
+									switch (_ammoG) do
+										{
+										case ("HE") : {_ammo = "32Rnd_155mm_Mo_shells_O"};
+										case ("SPECIAL") : {_ammo = "2Rnd_155mm_Mo_Cluster_O"};
+										case ("SECONDARY") : {_ammo = "2Rnd_155mm_Mo_guided_O"};
+										case ("SMOKE") : {_ammo = "6Rnd_155mm_Mo_smoke_O"};
+										case ("ILLUM") : {_ammo = ""};
+										};
+									}
 								};
 										
 							case (_tp in RydFFE_Rocket) :
@@ -1687,9 +1702,9 @@ RydFFE_AutoConfig =
 							_ammoC = configfile >> "CfgAmmo" >> _ammo;
 							_subAmmo = _ammoC >> "subMunitionAmmo";
 							
-							if not (_subAmmo isEqualTo "") then
+							if ((isText _subAmmo) and {not ((getText _subAmmo) isEqualTo "")}) then
 								{
-								_ammoC = configfile >> "CfgAmmo" >> _subAmmo
+								_ammoC = configfile >> "CfgAmmo" >> (getText _subAmmo);
 								};
 								
 							_actHit = getNumber (_ammoC >> "indirectHit");
