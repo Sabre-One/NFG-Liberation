@@ -30,7 +30,7 @@ There are 3 tiers for every category. If the strength of the guerillas will incr
 ["Weaponclassname","Magazineclassname","magazine amount","optic","tripod"]
 You can leave optic and tripod empty with "" */
 KP_liberation_guerilla_weapons_1 =[
-	["arifle_AKM_F","30Rnd_762x39_Mag_F",4,"",""],
+	["ML700_Lasgun_Rifle","30Rnd_762x39_Mag_F",4,"",""],
 	["arifle_AKS_F","30Rnd_545x39_Mag_F",4,"",""],
 	["hgun_PDW2000_F","30Rnd_9x21_Mag",4,"",""],
 	["SMG_01_F","30Rnd_45ACP_Mag_SMG_01",4,"",""],
