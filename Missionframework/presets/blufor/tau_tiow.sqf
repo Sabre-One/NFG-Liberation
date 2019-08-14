@@ -13,9 +13,9 @@ Respawn_truck_typename = "O_Truck_03_medical_F";                        // Defau
 // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 huron_typename = "O_Heli_Transport_04_F";                       // Default is "B_Heli_Transport_03_unarmed_F"
 // This defines the crew for vehicles.
-crewman_classname = "O_crew_F";                                  // Default is "B_crew_F"
+crewman_classname = "TIOW_Tau_Crew";                                  // Default is "B_crew_F"
 // This defines the pilot for helicopters.
-pilot_classname = "O_helipilot_F";                                     // Default is "B_Helipilot_F"
+pilot_classname = "TIOW_Tau_Crew";                                     // Default is "B_Helipilot_F"
 // These are the little birds which spawn on the Freedom or at Chimera base.
 KP_liberation_little_bird_classname = "O_LSV_02_unarmed_F";              // Default is "B_Heli_Light_01_F"
 // These are the boats which spawn at the stern of the Freedom.
