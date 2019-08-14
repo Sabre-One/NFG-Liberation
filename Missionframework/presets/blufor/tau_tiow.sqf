@@ -67,7 +67,7 @@ heavy_vehicles = [
     ["TIOW_Tau_Devilfish_TA",200,150,150], //APC
     ["TIOW_Tau_Hammerhead_TA",300,150,150], //MBT
     ["TIOW_Tau_Hammerhead_Ioncannon_TA",300,150,175],//Better MBT
-    ["TIOW_Tau_Hammerhead_Twinburst_TA",500,150,250]//Anti-air but with no real anti-air systems
+    ["TIOW_Tau_Hammerhead_Twinburst_TA",300,150,250]//Anti-air but with no real anti-air systems
 ];
 air_vehicles = [];
 static_vehicles = [];
