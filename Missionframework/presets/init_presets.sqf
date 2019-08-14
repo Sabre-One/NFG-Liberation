@@ -13,6 +13,7 @@ switch (KP_liberation_preset_blufor) do {
     case 12: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\gm_east_win.sqf";};
 	case 13: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\csat.sqf";};
 	case 14: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\csat_apex.sqf";};
+	case 15: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\tau_tiow.sqf";};	
 	default {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom.sqf";};
 };
 
@@ -28,6 +29,7 @@ switch (KP_liberation_preset_opfor) do {
 	case 9: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\gm_west_win.sqf";};
     case 10: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\gm_east.sqf";};
 	case 11: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\gm_east_win.sqf";};
+	case 12: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\renegades_tiow.sqf";};	
 	default {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom.sqf";};
 };
 
@@ -37,6 +39,7 @@ switch (KP_liberation_preset_resistance) do {
 	case 3: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\middle_eastern.sqf";};
 	case 4: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\RACS.sqf";};
     case 5: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\germany.sqf";};
+	case 6: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\GrimDarkness.sqf";};
 	default {[] call compileFinal preprocessFileLineNumbers "presets\resistance\custom.sqf";};
 };
 
