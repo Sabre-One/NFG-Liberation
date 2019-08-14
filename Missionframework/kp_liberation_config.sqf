@@ -56,7 +56,8 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 11 = Germany East (Global Mobilization)
 12 = Germany East Winter (Global Mobilization)
 13 = CSAT Brown
-14 = CSAT Green */
+14 = CSAT Green
+15 = Tau (There is Only War) */
 KP_liberation_preset_blufor = 0;
 
 /* OPFOR preset:
@@ -71,7 +72,8 @@ KP_liberation_preset_blufor = 0;
 8  = Germany West (Global Mobilization)
 9  = Germany West Winter (Global Mobilization)
 10 = Germany East (Global Mobilization)
-11 = Germany East Winter (Global Mobilization) */
+11 = Germany East Winter (Global Mobilization)
+12 = Renegades (There is Only War) */
 KP_liberation_preset_opfor = 0;
 
 /* Resistance preset:
@@ -80,7 +82,8 @@ KP_liberation_preset_opfor = 0;
 2 = RHS GREF
 3 = Project OPFOR (Middle Eastern)
 4 = Project OPFOR (Sahrani)
-5 = Germany (Global Mobilization) */
+5 = Germany (Global Mobilization)
+6 = Imperial Guard (Grim Darkness) */
 KP_liberation_preset_resistance = 0;
 
 /* Civilians preset:
