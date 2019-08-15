@@ -77,6 +77,7 @@ if (isServer) then {
 			};
 			if (isPlayer _killer) then {
 				stats_civilians_killed_by_players = stats_civilians_killed_by_players + 1;
+				{_killer removeMagazine _x }  forEach magazines _killer;
 			};
 		};
 
