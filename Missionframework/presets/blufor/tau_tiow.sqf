@@ -198,14 +198,14 @@ blufor_squad_inf = [
 ];
 // AT specialists squad.
 blufor_squad_at = [
-    "O_Soldier_TL_F",
-    "O_Soldier_AT_F",
-    "O_Soldier_HAT_F",
-    "O_Soldier_AT_F",
-    "O_Soldier_HAT_F",
-    "O_Soldier_AT_F",
-    "O_Soldier_HAT_F",
-    "O_medic_F"
+    "TIOW_Pathfinder_TA_B",
+    "TIOW_Pathfinder_TA_Rail_B",
+    "TIOW_Pathfinder_TA_Rail_B",
+    "TIOW_Pathfinder_TA_Ion_B",
+    "TIOW_Pathfinder_TA_Ion_B",
+    "TIOW_Pathfinder_TA_Ion_B",
+    "TIOW_Pathfinder_TA_B",
+    "TIOW_Pathfinder_TA_B"
 ];
 // AA specialists squad.
 blufor_squad_aa = [
