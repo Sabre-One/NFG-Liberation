@@ -135,7 +135,17 @@ GRLIB_arsenal_items = [
 "TIOW_Tau_optics_ColiS",
 "TIOW_Tau_optics_ColiB",
 "TIOW_Tau_optics_ColiB_zoom",
-"TIOW_Tau_optics_Mk_zoom"
+"TIOW_Tau_optics_Mk_zoom",
+"ItemMap",
+"ItemCompass",
+"ItemWatch",
+"ItemRadio",
+"ItemGPS",
+"FirstAidKit",
+"MineDetector",
+"Medikit",
+"ToolKit",
+"B_UavTerminal"
 ];
 
 GRLIB_arsenal_backpacks = [
