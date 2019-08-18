@@ -33,7 +33,7 @@ class RscTitles
 		w = 0.4 * safezoneW;
 		y = 0.65 * safezoneH + safezoneY;
 		h = 0.1 * safezoneH;
-		text = "[GREUH] and the Killah Potatoes present";
+		text = "Sabre One and the Killah Potatoes present";
 		shadow = 1;
 		};
 		class GenericLabelShadow : GenericLabel2{
@@ -63,7 +63,7 @@ class RscTitles
 			w = 0.35 * safezoneW;
 			y = 0.2 * safezoneH + safezoneY;
 			h = 0.6 * safezoneH;
-			text = "res\splash_libe2.paa";
+			text = "res\prototype.paa";
 		};
 		class VersionLabel {
 			idc = -1;
