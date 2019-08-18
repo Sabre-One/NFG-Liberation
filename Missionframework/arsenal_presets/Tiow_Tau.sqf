@@ -121,7 +121,21 @@ GRLIB_arsenal_items = [
 "U_TIOW_Pathfinder_DY",
 "U_TIOW_Pathfinder_SC",
 "U_TIOW_Pathfinder_VL",
-"U_TIOW_Pathfinder_FE"
+"U_TIOW_Pathfinder_FE",
+"TIOW_Tau_HelmetB2",
+"TIOW_Tau_HelmetB2_DY",
+"TIOW_Tau_HelmetB2_SC",
+"TIOW_Tau_HelmetB2_VL",
+"TIOW_Tau_HelmetB2_FE",
+"TIOW_Tau_HelmetS",
+"TIOW_Tau_HelmetS_DY",
+"TIOW_Tau_HelmetS_SC",
+"TIOW_Tau_HelmetS_VL",
+"TIOW_Tau_HelmetS_FE",
+"TIOW_Tau_optics_ColiS",
+"TIOW_Tau_optics_ColiB",
+"TIOW_Tau_optics_ColiB_zoom",
+"TIOW_Tau_optics_Mk_zoom"
 ];
 
 GRLIB_arsenal_backpacks = [
