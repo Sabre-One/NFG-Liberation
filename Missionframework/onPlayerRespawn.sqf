@@ -10,6 +10,7 @@ if ( isNil "GRLIB_respawn_loadout" ) then {
 	player linkItem "ItemCompass";
 	player linkItem "ItemWatch";
 	player linkItem "ItemRadio";
+	player setIdentity "Tau";
 } else {
 	sleep 4;
 	[ player, GRLIB_respawn_loadout ] call F_setLoadout;
