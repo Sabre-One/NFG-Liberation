@@ -58,7 +58,7 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 13 = CSAT Brown
 14 = CSAT Green
 15 = Tau (There is Only War) */
-KP_liberation_preset_blufor = 0;
+KP_liberation_preset_blufor = 15;
 
 /* OPFOR preset:
 0  = Custom (default vanilla CSAT)
@@ -74,7 +74,7 @@ KP_liberation_preset_blufor = 0;
 10 = Germany East (Global Mobilization)
 11 = Germany East Winter (Global Mobilization)
 12 = Renegades (There is Only War) */
-KP_liberation_preset_opfor = 0;
+KP_liberation_preset_opfor = 12;
 
 /* Resistance preset:
 0 = Custom (default vanilla FIA)
@@ -84,7 +84,7 @@ KP_liberation_preset_opfor = 0;
 4 = Project OPFOR (Sahrani)
 5 = Germany (Global Mobilization)
 6 = Imperial Guard (Grim Darkness) */
-KP_liberation_preset_resistance = 0;
+KP_liberation_preset_resistance = 6;
 
 /* Civilians preset:
 0 = Custom (default vanilla)
@@ -105,7 +105,7 @@ KP_liberation_preset_civilians = 0;
 7 = GM West arsenal preset.
 8 = GM East arsenal preset.
 9 = CSAT arsenal preset. */
-KP_liberation_arsenal = 0;
+KP_liberation_arsenal = 10;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine.	*/
