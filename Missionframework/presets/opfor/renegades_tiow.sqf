@@ -14,9 +14,9 @@ opfor_rpg = "TIOW_O_Ren_B_AT";                                          // Rifle
 opfor_grenadier = "TIOW_O_Ren_B_AT";                                     // Grenadier
 opfor_machinegunner = "TIOW_O_Ren_B_LMG";                                 // Autorifleman
 opfor_heavygunner = "TIOW_O_Ren_B_Plasma";                                  // Heavy Gunner
-opfor_marksman = "B_soldier_M_F";                                       // Marksman
+opfor_marksman = "TIOW_O_Ren_B_LMG";                                       // Marksman
 opfor_sharpshooter = "TIOW_O_Ren_B_Melta";                                // Sharpshooter
-opfor_sniper = "B_sniper_F";                                            // Sniper
+opfor_sniper = "TIOW_O_Ren_B_LMG";                                            // Sniper
 opfor_at = "TIOW_O_Ren_B_AT";                                            // AT Specialist
 opfor_aa = "TIOW_O_Ren_B_Melta";                                            // AA Specialist
 opfor_medic = "TIOW_O_Ren_B_Medic";                                              // Combat Life Saver
@@ -81,6 +81,7 @@ opfor_battlegroup_vehicles = [
     "TIOW_Renegade_LR_Executioner_Brown_OP",
     "TIOW_Renegade_LR_Vanquisher_Brown_OP",
     "Sentinel_PC_Possessed_0",
+	"TIOW_Centaur_01_Renegade_B_OP",
 	"TIOW_Centaur_01_Renegade_B_OP"
 ];
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
@@ -92,12 +93,11 @@ opfor_battlegroup_vehicles_low_intensity = [
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
 If something in this array can't hold all 8 soldiers then buggy behaviours may occur.	*/
 opfor_troup_transports = [
-    "TIOW_Centaur_01_Renegade_B_OP",
-    "Valkyrie_Possessed_B_O"
+    "TIOW_Centaur_01_Renegade_B_OP"
 ];
 // Enemy rotary-wings that will need to spawn in flight.
 opfor_choppers = [
-    "Valkyrie_Possessed_B_O"
+    "ML700_Valkyrie_Multilas"
 ];
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
