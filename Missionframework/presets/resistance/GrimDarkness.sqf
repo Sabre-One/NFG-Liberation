@@ -42,7 +42,7 @@ KP_liberation_guerilla_weapons_2 =[
 KP_liberation_guerilla_weapons_3 =[
 	["ML700_Lasgun_Rifle","ML700_Lasgun_Rifle_B_50_Battery",4,"",""],
 	["ML700_Lasgun_Rifle","ML700_Lasgun_Rifle_B_50_Battery",4,"",""],
-	["ML700_LMG_Stubber","ML700_Stubber_Drum",4,"",""]
+	["ML700_LMG_Stubber","ML700_Stubber_Drum",4,"",""],
 	["ML700_Longlas_Rifle","ML700_Lasgun_Rifle_B_50_Battery",4,"ML700_Longlas_Scope",""],
 	["ML700_PlasmaRifle_F","ML700_PlasmaRifle_Battery",4,"",""]
 ];
