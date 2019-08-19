@@ -7,12 +7,12 @@ enableDebugConsole = 1;
 allowFunctionsLog = 0;
 
 briefingName = $STR_MISSION_TITLE;
-overviewText = "www.NewFoundationGaming.de";
-overviewPicture = "res\lib.paa";
+overviewText = "www.NewFoundationGaming.com";
+overviewPicture = "res\lib_nfg.paa";
 author = "Saber One, [KP] Wyqer";
 onLoadName = $STR_MISSION_TITLE;
 onLoadMission = "www.NewFoundationGaming.com";
-loadScreen = "res\lib.paa";
+loadScreen = "res\lib_nfg.paa";
 
 joinUnassigned = 1;
 
