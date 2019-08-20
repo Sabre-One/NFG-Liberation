@@ -61,7 +61,8 @@ light_vehicles = [
     ["TIOW_Tau_Missile_Drone_TA",75,75,50], //OP Launcher
     ["TIOW_Tau_SmartMissile_Drone_TA",75,75,50], //Even more OP
     ["TIOW_Tau_Sniper_Drone_TA",100,0,50], //Rail gun platform
-    ["TIOW_Tau_Vehicle_Drone_TA",100,100,50] //Idk, minigun?
+    ["TIOW_Tau_Vehicle_Drone_TA",100,100,50], //Idk, minigun?
+	["O_Truck_03_covered_F",50,0,100]
 ];
 heavy_vehicles = [
     ["TIOW_Tau_Devilfish_TA",200,150,150], //APC
