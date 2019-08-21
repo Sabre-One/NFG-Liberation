@@ -31,4 +31,7 @@ class CfgDebriefing
 		pictureBackground = "";
 	};
 };
+class CfgFunctions {
+	#include "AIS\cfgFunctions.hpp"
+};
 #include "AIS\Effects\BarDlg.hpp"
