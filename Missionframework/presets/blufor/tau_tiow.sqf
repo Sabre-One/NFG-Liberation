@@ -57,18 +57,18 @@ infantry_units = [
 ];
 light_vehicles = [
     ["TIOW_Tau_Gun_Drone2_TA",50,0,25], //Pulse Guns(light)
-    ["TIOW_Tau_Marker_Drone_TA",75,0,50], //Laser Designation
-    ["TIOW_Tau_Missile_Drone_TA",75,75,50], //OP Launcher
-    ["TIOW_Tau_SmartMissile_Drone_TA",75,75,50], //Even more OP
-    ["TIOW_Tau_Sniper_Drone_TA",100,0,50], //Rail gun platform
-    ["TIOW_Tau_Vehicle_Drone_TA",100,100,50], //Idk, minigun?
+    ["TIOW_Tau_Marker_Drone_TA",50,0,25], //Laser Designation
+    ["TIOW_Tau_Missile_Drone_TA",50,0,25], //OP Launcher
+    ["TIOW_Tau_SmartMissile_Drone_TA",50,0,25], //Even more OP
+    ["TIOW_Tau_Sniper_Drone_TA",50,0,25], //Rail gun platform
+    ["TIOW_Tau_Vehicle_Drone_TA",50,0,25], //Idk, minigun?
 	["O_Truck_03_covered_F",50,0,100]
 ];
 heavy_vehicles = [
-    ["TIOW_Tau_Devilfish_TA",200,150,150], //APC
-    ["TIOW_Tau_Hammerhead_TA",300,150,150], //MBT
-    ["TIOW_Tau_Hammerhead_Ioncannon_TA",300,150,175],//Better MBT
-    ["TIOW_Tau_Hammerhead_Twinburst_TA",300,150,250]//Anti-air but with no real anti-air systems
+    ["TIOW_Tau_Devilfish_TA",150,150,150], //APC
+    ["TIOW_Tau_Hammerhead_TA",200,150,150], //MBT
+    ["TIOW_Tau_Hammerhead_Ioncannon_TA",200,150,150],//Better MBT
+    ["TIOW_Tau_Hammerhead_Twinburst_TA",200,150,150]//Anti-air but with no real anti-air systems
 ];
 air_vehicles = [];
 static_vehicles = [];
