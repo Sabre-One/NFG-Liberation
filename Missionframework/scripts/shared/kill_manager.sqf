@@ -71,7 +71,7 @@ if (isServer) then {
 		if (side (group _unit) == GRLIB_side_civilian) then {
 			stats_civilians_killed = stats_civilians_killed + 1;
 			if (side _killer == GRLIB_side_friendly) then {
-				if (KP_liberation_civrep_debug > 0) then {diag_log format ["[KP LIBERATION] [CIVREP] Civilian killed by: %1", name _killer];};
+				if (KP_liberation_civrep_debug > 0) then {diag_log format ["[KP LIBERATION] [CIVREP] Civilian killed by: %1 and has their magazines removed!", name _killer];};
 				[2, [(name _unit)]] remoteExec ["F_cr_globalMsg"];
 				[KP_liberation_cr_kill_penalty, true] spawn F_cr_changeCR;
 			};
