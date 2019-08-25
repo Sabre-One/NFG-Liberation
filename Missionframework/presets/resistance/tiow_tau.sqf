@@ -9,18 +9,14 @@ Optional Mods:
 /* Classnames of the guerilla faction which is friendly or hostile, depending on the civil reputation
 Standard loadout of the units will be replaced with a scripted one, which depends on the guerilla strength, after spawn */
 KP_liberation_guerilla_units = [
-	"ML700_Cadian_Rifleman2_light",
-	"ML700_Cadian_Rifleman_light",
-	"ML700_Cadian_Rifleman",
-	"ML700_Cadian_Rifleman2",
-	"ML700_Cadian_Marksman",
-	"ML700_Cadian_Marksman2"
+	"TIOW_Strike_FE_Lead_I",
+	"TIOW_Strike_FE_I"
 ];
 
 // Armed vehicles
 KP_liberation_guerilla_vehicles = [
-	"ML700_Taurox_Stubber",
-	"ML700_Taurox_Autocannon"
+	"TIOW_Tau_Hammerhead_Twinburst_FE_I",
+	"TIOW_Tau_Hammerhead_Ioncannon_FE_I"
 ];
 
 /* Guerilla Equipment
