@@ -68,8 +68,8 @@ RydFFE_Mortar = [
 "b_g_mortar_01_f",
 "i_g_mortar_01_f",
 "o_g_mortar_01_f",
-"I_E_Soldier_F",
-//There is Only War, seperated by Blufor, Opfor, and Indep for customization.
+"I_E_Soldier_F"
+/*There is Only War, seperated by Blufor, Opfor, and Indep for customization.
 "TIOW_IG_Mortar_667_Blu",
 "TIOW_IG_Mortar_700_Blu",
 "TIOW_IG_Mortar_776_Blu",
@@ -93,7 +93,7 @@ RydFFE_Mortar = [
 "TIOW_IG_Mortar_RenBlack_INDEP",
 "TIOW_IG_Mortar_RenBrown_INDEP",
 "TIOW_IG_Mortar_RenGreen_INDEP",
-"TIOW_IG_Mortar_RenGrey_INDEP"] + RydFFE_Add_Mortar;
+"TIOW_IG_Mortar_RenGrey_INDEP"]*/ + RydFFE_Add_Mortar;
 RydFFE_Rocket = [
 "b_mbt_01_mlrs_f",
 "I_Truck_02_MRL_F",
